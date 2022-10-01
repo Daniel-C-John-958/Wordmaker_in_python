@@ -1,6 +1,5 @@
-from collections import defaultdict
+
 import json
-from itertools import groupby
 # reading the data from the file
 with open('convert.txt') as f:
     data = f.read()
@@ -26,10 +25,9 @@ def fun1(x):
         string+=str(value)
     #print('string is ',string)
     return string
- 
-S = 'ajalfhladjhfjleuoai'
+# enter a string 
+S = input("enter a string")
 l= fun1(S)
-#print(fun1(S))
 fin=[]
 for key ,value in js.items():
     flag=True
@@ -64,7 +62,6 @@ for word in flatList:
 result=[d[n] for n in sorted(d, reverse=True)] 
 
 
-# [['sight', 'first'], ['love'], ['was'], ['at', 'It']] 
 #print(d.values())
 for i in result:
     if len(S)==len(i[0]):
